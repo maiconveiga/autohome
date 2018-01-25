@@ -1,0 +1,77 @@
+<jcge:GraphicCanvas xmlns:jcse="clr-namespace:JohnsonControls.Symbols.Electrical;assembly=JohnsonControls.Symbols.Electrical" xmlns:jcge="clr-namespace:JohnsonControls.GraphicalElements;assembly=JohnsonControls.GraphicalElements" xmlns:jcsfp="clr-namespace:JohnsonControls.Symbols.FloorPlan;assembly=JohnsonControls.Symbols.FloorPlan" xmlns:jcwt="clr-namespace:JohnsonControls.Windows.Types;assembly=JohnsonControls.Controls" xmlns:jcshvacwv="clr-namespace:JohnsonControls.Symbols.HVACWaterValves;assembly=JohnsonControls.Symbols.HVACWaterValves" xmlns:jcshvacws="clr-namespace:JohnsonControls.Symbols.HVACWaterSensors;assembly=JohnsonControls.Symbols.HVACWaterSensors" xmlns:jcshvacwp="clr-namespace:JohnsonControls.Symbols.HVACWaterPumps;assembly=JohnsonControls.Symbols.HVACWaterPumps" xmlns:jcshvacp="clr-namespace:JohnsonControls.Symbols.HVACPipes;assembly=JohnsonControls.Symbols.HVACPipes" xmlns:jcshvacd="clr-namespace:JohnsonControls.Symbols.HVACDuctwork;assembly=JohnsonControls.Symbols.HVACDuctwork" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="GraphicCanvas" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="1000" Height="800" Background="#FF000000" Version="1.2">
+  <jcge:GraphicCanvas.DefaultBindingCulture>
+    <jcwt:JCICultureInfo Name="en-US" />
+  </jcge:GraphicCanvas.DefaultBindingCulture>
+  <Rectangle x:Name="Left_Rectangle" Canvas.Left="4" Canvas.Top="4" Width="106" Height="55" Fill="#64D8E9FF" RadiusX="5" RadiusY="5">
+    <Rectangle.Stroke>
+      <LinearGradientBrush Opacity="0.5" EndPoint="0,1">
+        <GradientStop Color="#FF000000" Offset="1" />
+        <GradientStop Color="#FFFFFFFF" />
+      </LinearGradientBrush>
+    </Rectangle.Stroke>
+  </Rectangle>
+  <Rectangle x:Name="Center_Rectangle" Canvas.Left="115" Canvas.Top="5" Width="880" Height="55" Fill="#64D8E9FF" RadiusX="5" RadiusY="5">
+    <Rectangle.Stroke>
+      <LinearGradientBrush Opacity="0.5" EndPoint="0,1">
+        <GradientStop Color="#FF000000" Offset="1" />
+        <GradientStop Color="#FFFFFFFF" />
+      </LinearGradientBrush>
+    </Rectangle.Stroke>
+  </Rectangle>
+  <jcge:TextBlock x:Name="Primary_Title" Canvas.Left="125" Canvas.Top="11" Width="700" Height="26" FontFamily="Arial" FontSize="18" Background="#00FFFFFF" Text="Hidráulica" Foreground="#FFFFFFFF" Content="Hidráulica" />
+  <jcge:BasicButton x:Name="Home_Button" Canvas.Left="945" Canvas.Top="10" Width="40.667" Height="41.952" FontFamily="Arial" NavigateTo="" Background="#FF537491" Foreground="#FFFFFFFF" />
+  <jcge:BasicImage x:Name="Home_Image" Canvas.Left="955" Canvas.Top="20" Width="26" Height="26" NavigateTo="" BackgroundImage="C:/ProgramData/Johnson Controls/XAML Graphics Components/Graphic Generation Tool/Templates/V1/Blank/HouseIcon.png" Data="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAClklEQVRYR+1Xr1MCQRQmGAwGgsFAIBgMBIORQDAYDQaDwWAwGAz+AcwYCAQiwWAw8AcYCASDwUAgGAwGAoFgIBgIzIDfd/PezePc++UdzDjDzuzssft2v+/e+97bo1DYtDV4YD6fn6FfLBaLbQuH35eY/8boNTxP0ZsrowSMIgCeDeAAz2UFxNqLrhmb4UoIAeAQgJ8OwAnmTwiqhDA+ojfES/kTsqEA0Az9FnPHGL8EdIaxbjxU557cCVEjAHkw7h/huWpCVMJ6P+g1ksudELVhwfDcw9xeUA9B0kIuX0LUhIZD3H6PcStKnBLWqdhf5eIhgoq7vRclKRVskkyh8IUIz8mmIRywC/Cu0Qu14ad0EkLBmiQvxSzcT7UfG47Qh4ZMOy5EcQAkwYwUUiyWp3F7vHVsurYbWYETbUxgBBI1nDc2L8ra5NYiFnZYwIzxO35XEuCkMmFm2gruzFZx58CQ6ZBgKqQUxvQKMJsGb0SZaIiY0t4FKFX3JsXZmUypI4vNTKRmPoz6W/hNto1MSAk2i1bHGNuaQBinJMQit9RokODMTCZWRyZ0TwWJ59L9EyTEmsQMcXXYlpQZdRdmp/Nag4KExEtF1RFrRA/9TcLne0iywrsCIhrJ8uL1UzrKGHbnSgjjAP3VF3VINbWECBbXeC2U44zM+tKnSWjsqXKHhywhgvqdCSAgQUJVa6fPGgH8zodQ8E00O+RFrIecd57RzYbQxkNaLoYuUUMrd6Irit3veiusRdQskGtP+6gsk2+pDjMvpvexXrEZ9+c6FEcozeX27wnxTvIuU7wJ/5V6LcxDsOGnqPPyDZvnHSbH1mNDFibOiJCl0PMv00hCB2A+cZ2O+a6DUCsLE5zJr4haGu1tbH8AbtgjxJdfPgIAAAAASUVORK5CYII=" />
+  <jcshvacwp:VerticalPumpAdapter x:Name="Vertical_Pump1" Canvas.Left="248" Canvas.Top="566" Width="186.364" Height="228.788" jcge:RubberBand.ID="ae43c4d4-b94a-4399-b767-dcbed6616c45" AlarmBinding1="metasys-item:Alarm%20-%20Present%20Value" AlarmBinding2="metasys-item:Alarm%20-%20Present%20Value" />
+  <jcshvacp:BlindFlangeAdapter x:Name="Blind_Flange1" Canvas.Left="375" Canvas.Top="535" Width="30" MinWidth="30" MaxWidth="30" Height="75" MinHeight="10" />
+  <jcshvacp:PipeConnectorAdapter x:Name="Pipe_Connector1" Canvas.Left="393" Canvas.Top="661" Width="250" MinWidth="11" Height="11" MinHeight="11" MaxHeight="11" />
+  <jcshvacd:RoofVentUpAdapter x:Name="Roof_Vent_Up1" Canvas.Left="520" Canvas.Top="300" Width="252.333" Height="258.247" />
+  <jcshvacd:RoofVentUpAdapter x:Name="Roof_Vent_Up2" Canvas.Left="470" Canvas.Top="493" Width="361.667" Height="328.914" />
+  <jcshvacp:DownRightElbowAdapter x:Name="Down_Right_Elbow1" Canvas.Left="385" Canvas.Top="360" Width="200" MinWidth="11" Height="171" MinHeight="11" />
+  <jcshvacwp:VerticalPumpAdapter x:Name="Vertical_Pump2" Canvas.Left="150" Canvas.Top="260" Width="100" Height="100" jcge:RubberBand.ID="307e5e11-014e-44b1-830c-44f2a0bb6b57" AlarmBinding1="metasys-item:Alarm%20-%20Present%20Value" AlarmBinding2="metasys-item:Alarm%20-%20Present%20Value" />
+  <jcge:BasicSquare x:Name="State_Square1" Canvas.Left="45" Canvas.Top="425" Width="115.909" Height="200" AllOtherStates="#FF006400" />
+  <jcshvacp:PipeConnectorAdapter x:Name="Pipe_Connector2" Canvas.Left="730" Canvas.Top="578" Width="270.909" MinWidth="11" Height="11" MinHeight="11" MaxHeight="11" />
+  <jcge:TextBlock x:Name="TextBlock1" Canvas.Left="60" Canvas.Top="585" Width="100.667" Height="50.545" FontFamily="Arial" FontSize="30" Background="#00FFFFFF" Text="" Foreground="#FF000000" />
+  <jcge:TextBlock x:Name="TextBlock2" Canvas.Left="715" Canvas.Top="330" Width="216.667" Height="50.545" FontFamily="Arial" FontSize="30" Background="#00FFFFFF" Text="" Foreground="#FF000000" />
+  <jcge:TextBlock x:Name="TextBlock3" Canvas.Left="740" Canvas.Top="545" Width="137.667" Height="50.545" FontFamily="Arial" FontSize="30" Background="#00FFFFFF" Text="" Foreground="#FF000000" />
+  <jcge:TextBlock x:Name="TextBlock4" Canvas.Left="750" Canvas.Top="588" Width="235" Height="50.545" FontFamily="Arial" FontSize="30" Background="#00FFFFFF" Text="" Foreground="#FF000000" />
+  <jcshvacd:RoofVentUpAdapter x:Name="Roof_Vent_Up4" Canvas.Left="520" Canvas.Top="70" Width="252.333" Height="258.247" />
+  <jcshvacp:DownRightElbowAdapter x:Name="Down_Right_Elbow2" Canvas.Left="385" Canvas.Top="130" Width="200" MinWidth="11" Height="416" MinHeight="11" />
+  <jcge:TextBlock x:Name="TextBlock5" Canvas.Left="720" Canvas.Top="105" Width="245" Height="70" FontFamily="Arial" FontSize="30" Background="#00FFFFFF" Text="" Foreground="#FF000000" />
+  <jcshvacp:PipeConnectorAdapter x:Name="Pipe_Connector3" Canvas.Left="710" Canvas.Top="220" Width="285" MinWidth="11" Height="11" MinHeight="11" MaxHeight="11" />
+  <jcshvacp:PipeConnectorAdapter x:Name="Pipe_Connector4" Canvas.Left="715" Canvas.Top="450" Width="285" MinWidth="11" Height="11" MinHeight="11" MaxHeight="11" />
+  <jcshvacp:UpLeftElbowAdapter x:Name="Up_Left_Elbow1" Canvas.Left="230" Canvas.Top="220" Width="597.667" MinWidth="11" Height="85" MinHeight="11" />
+  <jcshvacp:DownLeftElbowSmallAdapter x:Name="Small_Down_Left_Elbow1" Canvas.Left="155" Canvas.Top="260" Width="75" MinWidth="7" Height="20" MinHeight="7" />
+  <jcshvacp:DownRightElbowSmallAdapter x:Name="Small_Down_Right_Elbow1" Canvas.Left="100" Canvas.Top="260" Width="75" MinWidth="7" Height="320" MinHeight="7" />
+  <jcge:BasicButton x:Name="Button1" Canvas.Left="580" Canvas.Top="260" Width="136" FontFamily="Arial" FontSize="11" Content="Caixa - Cozinha&amp;Quintal">
+    <jcge:BasicButton.Background>
+      <LinearGradientBrush StartPoint="0.574317312724957,0" EndPoint="0.575475771796449,0.719639671898496">
+        <GradientStop Color="#FF3585FF" />
+        <GradientStop Color="#FF000000" Offset="1" />
+      </LinearGradientBrush>
+    </jcge:BasicButton.Background>
+  </jcge:BasicButton>
+  <jcge:BasicButton x:Name="Button2" Canvas.Left="585" Canvas.Top="480" Width="136" FontFamily="Arial" FontSize="11" Content="Caixa -Banheiro">
+    <jcge:BasicButton.Background>
+      <LinearGradientBrush StartPoint="0.574317312724957,0" EndPoint="0.575475771796449,0.719639671898496">
+        <GradientStop Color="#FF3585FF" />
+        <GradientStop Color="#FF000000" Offset="1" />
+      </LinearGradientBrush>
+    </jcge:BasicButton.Background>
+  </jcge:BasicButton>
+  <jcge:BasicButton x:Name="Button3" Canvas.Left="590" Canvas.Top="725" Width="136" FontFamily="Arial" FontSize="11" Content="Cisterna">
+    <jcge:BasicButton.Background>
+      <LinearGradientBrush StartPoint="0.574317312724957,0" EndPoint="0.575475771796449,0.719639671898496">
+        <GradientStop Color="#FF3585FF" />
+        <GradientStop Color="#FF000000" Offset="1" />
+      </LinearGradientBrush>
+    </jcge:BasicButton.Background>
+  </jcge:BasicButton>
+  <jcge:BasicButton x:Name="Button4" Canvas.Left="40" Canvas.Top="610" Width="136" FontFamily="Arial" FontSize="11" Content="Quintal">
+    <jcge:BasicButton.Background>
+      <LinearGradientBrush StartPoint="0.574317312724957,0" EndPoint="0.575475771796449,0.719639671898496">
+        <GradientStop Color="#FF3585FF" />
+        <GradientStop Color="#FF000000" Offset="1" />
+      </LinearGradientBrush>
+    </jcge:BasicButton.Background>
+  </jcge:BasicButton>
+</jcge:GraphicCanvas>

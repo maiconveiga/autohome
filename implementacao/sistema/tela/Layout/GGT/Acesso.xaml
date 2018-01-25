@@ -1,0 +1,24 @@
+<jcge:GraphicCanvas xmlns:jcge="clr-namespace:JohnsonControls.GraphicalElements;assembly=JohnsonControls.GraphicalElements" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:jcwt="clr-namespace:JohnsonControls.Windows.Types;assembly=JohnsonControls.Controls" x:Name="GraphicCanvas" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="1000" Height="800" Background="#FF000000" Version="1.2">
+  <jcge:GraphicCanvas.DefaultBindingCulture>
+    <jcwt:JCICultureInfo Name="en-US" />
+  </jcge:GraphicCanvas.DefaultBindingCulture>
+  <Rectangle x:Name="Left_Rectangle" Canvas.Left="4" Canvas.Top="4" Width="106" Height="55" Fill="#64D8E9FF" RadiusX="5" RadiusY="5">
+    <Rectangle.Stroke>
+      <LinearGradientBrush Opacity="0.5" EndPoint="0,1">
+        <GradientStop Color="#FF000000" Offset="1" />
+        <GradientStop Color="#FFFFFFFF" />
+      </LinearGradientBrush>
+    </Rectangle.Stroke>
+  </Rectangle>
+  <Rectangle x:Name="Center_Rectangle" Canvas.Left="115" Canvas.Top="5" Width="880" Height="55" Fill="#64D8E9FF" RadiusX="5" RadiusY="5">
+    <Rectangle.Stroke>
+      <LinearGradientBrush Opacity="0.5" EndPoint="0,1">
+        <GradientStop Color="#FF000000" Offset="1" />
+        <GradientStop Color="#FFFFFFFF" />
+      </LinearGradientBrush>
+    </Rectangle.Stroke>
+  </Rectangle>
+  <jcge:TextBlock x:Name="TextBlock1" Canvas.Left="125" Canvas.Top="11" Width="700" Height="26" FontFamily="Arial" FontSize="18" Background="#00FFFFFF" Text="Acesso" Foreground="#FFFFFFFF" Content="Acesso" />
+  <jcge:BasicButton x:Name="Button1" Canvas.Left="945" Canvas.Top="10" Width="40.667" Height="41.952" FontFamily="Arial" NavigateTo="" Background="#FF537491" Foreground="#FFFFFFFF" />
+  <jcge:BasicImage x:Name="Image1" Canvas.Left="955" Canvas.Top="20" Width="26" Height="26" NavigateTo="" BackgroundImage="C:/ProgramData/Johnson Controls/XAML Graphics Components/Graphic Generation Tool/Templates/V1/Blank/HouseIcon.png" Data="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAClklEQVRYR+1Xr1MCQRQmGAwGgsFAIBgMBIORQDAYDQaDwWAwGAz+AcwYCAQiwWAw8AcYCASDwUAgGAwGAoFgIBgIzIDfd/PezePc++UdzDjDzuzssft2v+/e+97bo1DYtDV4YD6fn6FfLBaLbQuH35eY/8boNTxP0ZsrowSMIgCeDeAAz2UFxNqLrhmb4UoIAeAQgJ8OwAnmTwiqhDA+ojfES/kTsqEA0Az9FnPHGL8EdIaxbjxU557cCVEjAHkw7h/huWpCVMJ6P+g1ksudELVhwfDcw9xeUA9B0kIuX0LUhIZD3H6PcStKnBLWqdhf5eIhgoq7vRclKRVskkyh8IUIz8mmIRywC/Cu0Qu14ad0EkLBmiQvxSzcT7UfG47Qh4ZMOy5EcQAkwYwUUiyWp3F7vHVsurYbWYETbUxgBBI1nDc2L8ra5NYiFnZYwIzxO35XEuCkMmFm2gruzFZx58CQ6ZBgKqQUxvQKMJsGb0SZaIiY0t4FKFX3JsXZmUypI4vNTKRmPoz6W/hNto1MSAk2i1bHGNuaQBinJMQit9RokODMTCZWRyZ0TwWJ59L9EyTEmsQMcXXYlpQZdRdmp/Nag4KExEtF1RFrRA/9TcLne0iywrsCIhrJ8uL1UzrKGHbnSgjjAP3VF3VINbWECBbXeC2U44zM+tKnSWjsqXKHhywhgvqdCSAgQUJVa6fPGgH8zodQ8E00O+RFrIecd57RzYbQxkNaLoYuUUMrd6Irit3veiusRdQskGtP+6gsk2+pDjMvpvexXrEZ9+c6FEcozeX27wnxTvIuU7wJ/5V6LcxDsOGnqPPyDZvnHSbH1mNDFibOiJCl0PMv00hCB2A+cZ2O+a6DUCsLE5zJr4haGu1tbH8AbtgjxJdfPgIAAAAASUVORK5CYII=" />
+</jcge:GraphicCanvas>

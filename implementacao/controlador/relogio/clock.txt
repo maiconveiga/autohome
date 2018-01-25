@@ -1,0 +1,72 @@
+01.
+int seg=0,
+02.
+min=0,
+03.
+hor=0;
+04.
+ 
+05.
+void setup()
+06.
+{
+07.
+Serial.begin(9600);
+08.
+}
+09.
+ 
+10.
+void loop()
+11.
+{
+12.
+static unsigned long ult_tempo = 0;
+13.
+int tempo = millis();
+14.
+if(tempo - ult_tempo >= 1000) {
+15.
+ult_tempo = tempo;
+16.
+seg++;
+17.
+}
+18.
+if(seg>=60) {
+19.
+seg = 0;
+20.
+min++;
+21.
+}
+22.
+if(min>=60) {
+23.
+min = 0;
+24.
+hor++;
+25.
+}
+26.
+if(hor>=24) {
+27.
+hor=0;
+28.
+min=0;
+29.
+}
+30.
+Serial.print(hor);
+31.
+Serial.print(":");
+32.
+Serial.print(min);
+33.
+Serial.print(":");
+34.
+Serial.println(seg);
+35.
+delay(1000);
+36.
+}

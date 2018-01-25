@@ -1,0 +1,42 @@
+<jcge:GraphicCanvas xmlns:jcwt="clr-namespace:JohnsonControls.Windows.Types;assembly=JohnsonControls.Controls" xmlns:jcse="clr-namespace:JohnsonControls.Symbols.Electrical;assembly=JohnsonControls.Symbols.Electrical" xmlns:jcge="clr-namespace:JohnsonControls.GraphicalElements;assembly=JohnsonControls.GraphicalElements" xmlns:jcsfp="clr-namespace:JohnsonControls.Symbols.FloorPlan;assembly=JohnsonControls.Symbols.FloorPlan" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="GraphicCanvas" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="1000" Height="800" Background="#FF000000" Version="1.2">
+  <jcge:GraphicCanvas.DefaultBindingCulture>
+    <jcwt:JCICultureInfo Name="en-US" />
+  </jcge:GraphicCanvas.DefaultBindingCulture>
+  <Rectangle x:Name="Left_Rectangle" Canvas.Left="4" Canvas.Top="4" Width="106" Height="55" Fill="#64D8E9FF" RadiusX="5" RadiusY="5">
+    <Rectangle.Stroke>
+      <LinearGradientBrush Opacity="0.5" EndPoint="0,1">
+        <GradientStop Color="#FF000000" Offset="1" />
+        <GradientStop Color="#FFFFFFFF" />
+      </LinearGradientBrush>
+    </Rectangle.Stroke>
+  </Rectangle>
+  <Rectangle x:Name="Center_Rectangle" Canvas.Left="115" Canvas.Top="5" Width="880" Height="55" Fill="#64D8E9FF" RadiusX="5" RadiusY="5">
+    <Rectangle.Stroke>
+      <LinearGradientBrush Opacity="0.5" EndPoint="0,1">
+        <GradientStop Color="#FF000000" Offset="1" />
+        <GradientStop Color="#FFFFFFFF" />
+      </LinearGradientBrush>
+    </Rectangle.Stroke>
+  </Rectangle>
+  <jcge:TextBlock x:Name="Primary_Title" Canvas.Left="125" Canvas.Top="11" Width="700" Height="26" FontFamily="Arial" FontSize="18" Background="#00FFFFFF" Text="Iluminação" Foreground="#FFFFFFFF" Content="Iluminação" />
+  <jcge:BasicButton x:Name="Home_Button" Canvas.Left="945" Canvas.Top="10" Width="40.667" Height="41.952" FontFamily="Arial" NavigateTo="" Background="#FF537491" Foreground="#FFFFFFFF" />
+  <jcge:BasicImage x:Name="Home_Image" Canvas.Left="955" Canvas.Top="20" Width="26" Height="26" NavigateTo="" BackgroundImage="C:/ProgramData/Johnson Controls/XAML Graphics Components/Graphic Generation Tool/Templates/V1/Blank/HouseIcon.png" Data="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAClklEQVRYR+1Xr1MCQRQmGAwGgsFAIBgMBIORQDAYDQaDwWAwGAz+AcwYCAQiwWAw8AcYCASDwUAgGAwGAoFgIBgIzIDfd/PezePc++UdzDjDzuzssft2v+/e+97bo1DYtDV4YD6fn6FfLBaLbQuH35eY/8boNTxP0ZsrowSMIgCeDeAAz2UFxNqLrhmb4UoIAeAQgJ8OwAnmTwiqhDA+ojfES/kTsqEA0Az9FnPHGL8EdIaxbjxU557cCVEjAHkw7h/huWpCVMJ6P+g1ksudELVhwfDcw9xeUA9B0kIuX0LUhIZD3H6PcStKnBLWqdhf5eIhgoq7vRclKRVskkyh8IUIz8mmIRywC/Cu0Qu14ad0EkLBmiQvxSzcT7UfG47Qh4ZMOy5EcQAkwYwUUiyWp3F7vHVsurYbWYETbUxgBBI1nDc2L8ra5NYiFnZYwIzxO35XEuCkMmFm2gruzFZx58CQ6ZBgKqQUxvQKMJsGb0SZaIiY0t4FKFX3JsXZmUypI4vNTKRmPoz6W/hNto1MSAk2i1bHGNuaQBinJMQit9RokODMTCZWRyZ0TwWJ59L9EyTEmsQMcXXYlpQZdRdmp/Nag4KExEtF1RFrRA/9TcLne0iywrsCIhrJ8uL1UzrKGHbnSgjjAP3VF3VINbWECBbXeC2U44zM+tKnSWjsqXKHhywhgvqdCSAgQUJVa6fPGgH8zodQ8E00O+RFrIecd57RzYbQxkNaLoYuUUMrd6Irit3veiusRdQskGtP+6gsk2+pDjMvpvexXrEZ9+c6FEcozeX27wnxTvIuU7wJ/5V6LcxDsOGnqPPyDZvnHSbH1mNDFibOiJCl0PMv00hCB2A+cZ2O+a6DUCsLE5zJr4haGu1tbH8AbtgjxJdfPgIAAAAASUVORK5CYII=" />
+  <jcge:KeyDataWidget x:Name="Sala" Canvas.Left="205" Canvas.Top="150" Width="195" Height="195.333" />
+  <jcge:TextBlock x:Name="TextBlock1" Canvas.Left="235" Canvas.Top="155" Width="53" Height="26" FontFamily="Arial" FontSize="20" Background="#00FFFFFF" IsBold="True" Text="Sala" Foreground="#FF000000" Content="Sala" />
+  <jcge:KeyDataWidget x:Name="Key_Data1" Canvas.Left="410" Canvas.Top="150" Width="195" Height="195.333" />
+  <jcge:TextBlock x:Name="TextBlock2" Canvas.Left="440" Canvas.Top="155" Width="155" Height="26" FontFamily="Arial" FontSize="20" Background="#00FFFFFF" IsBold="True" Text="Banheiro" Foreground="#FF000000" Content="Banheiro" />
+  <jcge:KeyDataWidget x:Name="Key_Data2" Canvas.Left="615" Canvas.Top="150" Width="200" Height="195.333" />
+  <jcge:TextBlock x:Name="TextBlock3" Canvas.Left="648" Canvas.Top="155" Width="155" Height="26" FontFamily="Arial" FontSize="20" Background="#00FFFFFF" IsBold="True" Text="Cozinha" Foreground="#FF000000" Content="Cozinha" />
+  <jcge:KeyDataWidget x:Name="Key_Data3" Canvas.Left="205" Canvas.Top="360" Width="195" Height="195.333" />
+  <jcge:TextBlock x:Name="TextBlock4" Canvas.Left="238" Canvas.Top="365" Width="150" Height="26" FontFamily="Arial" FontSize="20" Background="#00FFFFFF" IsBold="True" Text="Quintal" Foreground="#FF000000" Content="Quintal" />
+  <jcge:KeyDataWidget x:Name="Key_Data4" Canvas.Left="410" Canvas.Top="360" Width="195" Height="195.333" />
+  <jcge:TextBlock x:Name="TextBlock5" Canvas.Left="443" Canvas.Top="365" Width="155" Height="26" FontFamily="Arial" FontSize="20" Background="#00FFFFFF" IsBold="True" Text="Quarto 1" Foreground="#FF000000" Content="Quarto 1" />
+  <jcge:KeyDataWidget x:Name="Key_Data5" Canvas.Left="615" Canvas.Top="360" Width="200" Height="195.333" />
+  <jcge:TextBlock x:Name="TextBlock6" Canvas.Left="650" Canvas.Top="365" Width="155" Height="26" FontFamily="Arial" FontSize="20" Background="#00FFFFFF" IsBold="True" Text="Varanda" Foreground="#FF000000" Content="Varanda" />
+  <jcge:BasicSquare x:Name="State_Square1" Canvas.Left="215" Canvas.Top="180" Width="175" Height="155" AllOtherStates="#FF000000" />
+  <jcge:BasicSquare x:Name="State_Square2" Canvas.Left="420" Canvas.Top="180" Width="175" Height="155" AllOtherStates="#FF000000" />
+  <jcge:BasicSquare x:Name="State_Square3" Canvas.Left="625" Canvas.Top="180" Width="180" Height="155" AllOtherStates="#FF000000" />
+  <jcge:BasicSquare x:Name="State_Square4" Canvas.Left="625" Canvas.Top="390" Width="180" Height="155" AllOtherStates="#FF000000" />
+  <jcge:BasicSquare x:Name="State_Square5" Canvas.Left="420" Canvas.Top="390" Width="175" Height="155" AllOtherStates="#FF000000" />
+  <jcge:BasicSquare x:Name="State_Square6" Canvas.Left="215" Canvas.Top="390" Width="175" Height="155" AllOtherStates="#FF000000" />
+</jcge:GraphicCanvas>
